@@ -1,0 +1,161 @@
+@extends('adminlte::page')
+
+@section('content_header')
+    <h1>Dashboard</h1>
+@stop
+
+@section('content')
+    <h2>Network Devices</h2>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="fa fa-expand-arrows-alt"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Routers</span>
+              <span class="info-box-number">{{App\Router::count()}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-red"><i class="fa fa-exchange-alt"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Switches</span>
+              <span class="info-box-number">{{App\SSwitch::count()}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
+        <!-- fix for small devices only -->
+        <div class="clearfix visible-sm-block"></div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="fa fa-search"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Firewalls</span>
+              <span class="info-box-number">{{App\Firewall::count()}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="fa fa-wifi"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Access Points</span>
+              <span class="info-box-number">{{App\AccessPoint::count()}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+      </div>
+
+      <h2>End Devices</h2>
+      <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-navy"><i class="fa fa-server"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Servers</span>
+                <span class="info-box-number">20</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-maroon"><i class="fa fa-desktop"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Computers</span>
+                <span class="info-box-number">112</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix visible-sm-block"></div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-orange"><i class="fa fa-phone"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">IP Phones</span>
+                <span class="info-box-number">80</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-red"><i class="fa fa-print"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Printers</span>
+                <span class="info-box-number">10</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+
+      <div class="row">
+        <div class="col-md-6">
+
+          <!-- DONUT CHART1 -->
+          <div class="box box-danger">
+            <div class="box-header with-border">
+              <h3 class="box-title">Network Devices</h3>
+            </div>
+            <div class="box-body">
+              <div id="pieChart1" style="height: 370px; width: 100%;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (LEFT) -->
+        <div class="col-md-6">
+          <!-- DONUT CHART2 -->
+          <div class="box box-danger">
+            <div class="box-header with-border">
+              <h3 class="box-title">End Devices</h3>
+            </div>
+            <div class="box-body">
+              <div id="pieChart2" style="height: 370px; width: 100%;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (RIGHT) -->
+      </div>
+@stop
