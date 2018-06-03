@@ -1,3 +1,5 @@
+Inventory Web application written in Laravel for a university project at Information Systems course.
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
