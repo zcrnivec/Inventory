@@ -1,6 +1,6 @@
 <h1>Inventory Web application written in Laravel for a university project at Information Systems course.</h1>
 
-<pre>inventory/
+<em><pre>inventory/
 ├── app
 │   ├── Console
 │   ├── Exceptions
@@ -128,7 +128,8 @@
     │           │   └── ViewComposers
     │           └── Menu
     │               └── Filters
-<pre>
+</pre>
+</em>
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
