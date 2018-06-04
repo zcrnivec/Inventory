@@ -1,5 +1,135 @@
 <h1>Inventory Web application written in Laravel for a university project at Information Systems course.</h1>
 
+'''inventory/
+├── app
+│   ├── Console
+│   ├── Exceptions
+│   ├── Http
+│   │   ├── Controllers
+│   │   │   └── Auth
+│   │   └── Middleware
+│   └── Providers
+├── bootstrap
+│   └── cache
+├── config
+├── database
+│   ├── factories
+│   ├── migrations
+│   └── seeds
+├── public
+│   ├── css
+│   ├── js
+│   └── vendor
+│       └── adminlte
+│           ├── css
+│           ├── dist
+│           │   ├── css
+│           │   │   └── skins
+│           │   └── js
+│           ├── plugins
+│           │   └── iCheck
+│           │       └── square
+│           └── vendor
+│               ├── backtopbtn
+│               ├── bootstrap
+│               │   └── dist
+│               │       ├── css
+│               │       ├── fonts
+│               │       └── js
+│               ├── datatables
+│               │   ├── css
+│               │   └── js
+│               ├── font-awesome
+│               │   ├── css
+│               │   ├── fonts
+│               │   └── webfonts
+│               ├── Ionicons
+│               │   ├── css
+│               │   └── fonts
+│               └── jquery
+│                   └── dist
+├── resources
+│   ├── assets
+│   │   ├── js
+│   │   │   └── components
+│   │   └── sass
+│   ├── lang
+│   │   └── en
+│   └── views
+│       ├── admin
+│       ├── auth
+│       │   └── passwords
+│       └── layouts
+├── routes
+├── SqlDump
+├── storage
+│   ├── app
+│   │   └── public
+│   ├── framework
+│   │   ├── cache
+│   │   ├── sessions
+│   │   ├── testing
+│   │   └── views
+│   └── logs
+├── tests
+│   ├── Feature
+│   └── Unit
+└── vendor
+    ├── jeroennoten
+    │   └── laravel-adminlte
+    │       ├── config
+    │       ├── resources
+    │       │   ├── assets
+    │       │   │   ├── css
+    │       │   │   ├── dist
+    │       │   │   │   ├── css
+    │       │   │   │   │   └── skins
+    │       │   │   │   └── js
+    │       │   │   ├── plugins
+    │       │   │   │   └── iCheck
+    │       │   │   │       └── square
+    │       │   │   └── vendor
+    │       │   │       ├── backtopbtn
+    │       │   │       ├── bootstrap
+    │       │   │       │   └── dist
+    │       │   │       │       ├── css
+    │       │   │       │       ├── fonts
+    │       │   │       │       └── js
+    │       │   │       ├── font-awesome
+    │       │   │       │   ├── css
+    │       │   │       │   └── fonts
+    │       │   │       ├── Ionicons
+    │       │   │       │   ├── css
+    │       │   │       │   └── fonts
+    │       │   │       └── jquery
+    │       │   │           └── dist
+    │       │   ├── lang
+    │       │   │   ├── ar
+    │       │   │   ├── cn
+    │       │   │   ├── de
+    │       │   │   ├── en
+    │       │   │   ├── es
+    │       │   │   ├── fr
+    │       │   │   ├── nl
+    │       │   │   ├── pt-br
+    │       │   │   └── ru
+    │       │   └── views
+    │       │       ├── partials
+    │       │       └── passwords
+    │       └── src
+    │           ├── Console
+    │           │   └── stubs
+    │           │       └── make
+    │           │           └── views
+    │           │               └── auth
+    │           │                   └── passwords
+    │           ├── Events
+    │           ├── Http
+    │           │   └── ViewComposers
+    │           └── Menu
+    │               └── Filters
+'''
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
